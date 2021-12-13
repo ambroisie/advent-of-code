@@ -1,5 +1,9 @@
 #!/usr/bin/env python
 
+# Mypy has issues with assigning Callable to fields of objects
+# See https://github.com/python/mypy/issues/708
+# type: ignore
+
 import itertools
 import sys
 from copy import deepcopy

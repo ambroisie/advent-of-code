@@ -56,6 +56,9 @@
 
         devShell = pkgs.mkShell {
           buildInputs = with pkgs; [
+            pkgs.python3Packages.black
+            pkgs.python3Packages.isort
+            pkgs.python3Packages.mypy
             python3
           ];
 

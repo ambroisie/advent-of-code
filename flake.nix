@@ -60,6 +60,7 @@
               black
               isort
               mypy
+              z3
             ]))
           ];
 

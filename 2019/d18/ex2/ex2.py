@@ -65,7 +65,7 @@ def build_graph(grid: RawGrid) -> Graph:
 
 
 def solve(G: Graph, start: str) -> int:
-    @lru_cache(2 ** 20)
+    @lru_cache(2**20)
     def reachable_keys(src: str, found: FrozenSet[str]) -> GraphInfo:
         queue = []
         distance: DefaultDict[str, Union[float, int]] = defaultdict(lambda: inf)
@@ -97,7 +97,7 @@ def solve(G: Graph, start: str) -> int:
 
         return reachable
 
-    @lru_cache(2 ** 20)
+    @lru_cache(2**20)
     def min_steps(
         sources: str, keys_to_find: int, found: FrozenSet[str] = frozenset()
     ) -> Union[float, int]:

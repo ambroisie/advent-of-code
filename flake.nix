@@ -62,6 +62,7 @@
               mypy
               z3
             ]))
+            pyright
           ];
 
           inherit (self.checks.${system}.pre-commit) shellHook;

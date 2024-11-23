@@ -3,7 +3,6 @@
 import itertools
 import sys
 from collections import Counter
-from dataclasses import dataclass
 from typing import Iterator, List, TypeVar
 
 T = TypeVar("T")

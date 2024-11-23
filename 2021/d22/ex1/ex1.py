@@ -3,7 +3,7 @@
 import functools
 import itertools
 import sys
-from typing import Iterator, List, NamedTuple, Optional, Set, Tuple, cast
+from typing import List, NamedTuple, Optional, Set, Tuple
 
 
 class Point(NamedTuple):

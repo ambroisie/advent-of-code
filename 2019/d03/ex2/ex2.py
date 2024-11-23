@@ -2,7 +2,7 @@
 
 import sys
 from fractions import Fraction
-from typing import Dict, List, NamedTuple, Optional
+from typing import List, NamedTuple, Optional
 
 
 class Point(NamedTuple):

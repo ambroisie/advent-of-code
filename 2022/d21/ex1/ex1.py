@@ -25,7 +25,7 @@ class Operator(str, enum.Enum):
 
 class Monkey:
     def get_value(self, monkeys: dict[str, "Monkey"]) -> int:
-        raise NotImplemented
+        raise NotImplementedError
 
 
 @dataclasses.dataclass

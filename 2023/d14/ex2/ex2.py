@@ -1,6 +1,5 @@
 #!/usr/bin/env python
 
-import dataclasses
 import itertools
 import sys
 from enum import StrEnum

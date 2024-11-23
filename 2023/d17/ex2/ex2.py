@@ -2,7 +2,6 @@
 
 import functools
 import heapq
-import itertools
 import sys
 from collections.abc import Iterator
 from enum import Enum

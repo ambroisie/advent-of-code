@@ -93,7 +93,7 @@ class MathObserver:
 
 class Monkey:
     def get_value(self, monkeys: dict[str, "Monkey"]) -> Num:
-        raise NotImplemented
+        raise NotImplementedError
 
 
 @dataclasses.dataclass

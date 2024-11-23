@@ -41,7 +41,6 @@ def update(grid: Grid) -> Grid:
 
 
 def solve(grid: Grid) -> int:
-
     for __ in range(6):
         grid = update(grid)
 

@@ -39,15 +39,11 @@
             src = self;
 
             hooks = {
-              black = {
-                enable = true;
-              };
-
-              isort = {
-                enable = true;
-              };
-
               nixpkgs-fmt = {
+                enable = true;
+              };
+
+              ruff-format = {
                 enable = true;
               };
             };
@@ -57,12 +53,11 @@
         devShell = pkgs.mkShell {
           buildInputs = with pkgs; [
             (python3.withPackages (ps: with ps; [
-              black
-              isort
               mypy
               z3
             ]))
             pyright
+            ruff
           ];
 
           inherit (self.checks.${system}.pre-commit) shellHook;

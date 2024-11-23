@@ -1,0 +1,8 @@
+[lint]
+extend-select = [
+    "I", # Import sorting is a lint check
+]
+ignore = [
+    "E731", # Assigning lambdas is sometimes more readable
+    "E741", # Ambiguous variable names are good enough actually
+]

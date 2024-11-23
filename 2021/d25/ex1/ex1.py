@@ -63,7 +63,9 @@ def solve(input: List[str]) -> int:
                     (
                         "v"
                         if Point(x, y) in map.south
-                        else ">" if Point(x, y) in map.east else "."
+                        else ">"
+                        if Point(x, y) in map.east
+                        else "."
                     )
                     for y in range(map.dimensions.y)
                 )

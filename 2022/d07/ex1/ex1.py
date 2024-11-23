@@ -8,7 +8,6 @@ FileSystem = dict[str, Union[int, "FileSystem"]]
 
 def solve(input: list[str]) -> int:
     def build_tree(input: list[str], i: int = 0) -> tuple[FileSystem, int]:
-
         fs: FileSystem = {}
 
         while i < len(input):

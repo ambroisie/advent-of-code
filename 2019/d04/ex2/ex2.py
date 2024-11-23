@@ -8,7 +8,7 @@ def is_valid_password(p: int) -> bool:
 
     def has_unique_adjacent_digit():
         counts = {d: 0 for d in range(10)}
-        for (a, b) in zip(digits, digits[1:]):
+        for a, b in zip(digits, digits[1:]):
             if a == b:
                 counts[int(a)] += 1
         return any(count == 1 for count in counts.values())

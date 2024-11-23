@@ -61,11 +61,11 @@ def solve(input: List[str]) -> int:
         for x in range(map.dimensions.x):
             print(
                 "".join(
-                    "v"
-                    if Point(x, y) in map.south
-                    else ">"
-                    if Point(x, y) in map.east
-                    else "."
+                    (
+                        "v"
+                        if Point(x, y) in map.south
+                        else ">" if Point(x, y) in map.east else "."
+                    )
                     for y in range(map.dimensions.y)
                 )
             )

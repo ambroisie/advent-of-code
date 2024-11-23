@@ -39,7 +39,7 @@ def solve(input: List[str]) -> int:
         # Second step, do flashes
         has_flashed: Set[Point] = set()
         while len(flashes := (excited(levels) - has_flashed)) > 0:
-            for (i, j) in flashes:
+            for i, j in flashes:
                 has_flashed.add((i, j))
                 for x, y in neighbours_of((i, j)):
                     levels[x][y] += 1

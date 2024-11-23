@@ -7,7 +7,7 @@ def is_valid_password(p: int) -> bool:
     digits = str(p)
 
     def has_adjacent_digit():
-        for (a, b) in zip(digits, digits[1:]):
+        for a, b in zip(digits, digits[1:]):
             if a == b:
                 return True
         return False

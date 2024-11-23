@@ -12,7 +12,7 @@ def solve(input: List[str]) -> int:
     def parse() -> Map:
         res: Map = defaultdict(set)
 
-        for (start, to) in map(lambda s: s.split("-"), input):
+        for start, to in map(lambda s: s.split("-"), input):
             res[start].add(to)
             res[to].add(start)
 

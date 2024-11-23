@@ -20,7 +20,7 @@ class HeightMap:
 
     def reachable_neighbours(self, p: Point) -> Iterator[Point]:
         reachable_height = self.heights[p.x][p.y] + 1
-        for (dx, dy) in ((-1, 0), (1, 0), (0, -1), (0, 1)):
+        for dx, dy in ((-1, 0), (1, 0), (0, -1), (0, 1)):
             x, y = p.x + dx, p.y + dy
             if x < 0 or x >= len(self.heights):
                 continue

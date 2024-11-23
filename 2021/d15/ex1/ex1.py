@@ -1,9 +1,8 @@
 #!/usr/bin/env python
 
 import heapq
-import itertools
 import sys
-from typing import Iterator, List, NamedTuple, Set, Tuple
+from typing import Iterator, List, NamedTuple, Set
 
 
 class Point(NamedTuple):

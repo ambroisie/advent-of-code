@@ -1,6 +1,5 @@
 #!/usr/bin/env python
 
-import itertools
 import sys
 from collections import defaultdict
 from typing import Dict, List, Set

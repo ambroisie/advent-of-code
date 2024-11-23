@@ -1,7 +1,5 @@
 #!/usr/bin/env python
 
-import sys
-from copy import deepcopy
 from enum import IntEnum
 from typing import List, NamedTuple
 

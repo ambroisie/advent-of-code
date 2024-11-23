@@ -2,7 +2,6 @@
 
 import itertools
 import sys
-from copy import deepcopy
 from typing import Iterator, List, Set, Tuple
 
 Grid = List[List[int]]

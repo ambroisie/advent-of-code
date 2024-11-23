@@ -1,6 +1,5 @@
 #!/usr/bin/env python
 
-import functools
 import itertools
 import sys
 from dataclasses import dataclass

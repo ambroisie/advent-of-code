@@ -1,8 +1,6 @@
 #!/usr/bin/env python
 
-import functools
 import math
-import operator as op
 import sys
 from collections import Counter
 from enum import StrEnum

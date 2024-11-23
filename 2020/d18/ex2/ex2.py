@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 import sys
-from typing import Callable, Dict, List
+from typing import List
 
 """
 E : T [ * T ]*

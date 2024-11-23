@@ -3,7 +3,6 @@
 import itertools
 import sys
 from collections import defaultdict
-from copy import deepcopy
 from typing import Dict, Iterator, List, Tuple
 
 Offset = Tuple[int, int]

@@ -1,6 +1,5 @@
 #!/usr/bin/env python
 
-import itertools
 import sys
 from typing import List, Optional, cast
 

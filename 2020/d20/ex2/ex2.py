@@ -5,7 +5,6 @@ import itertools
 import math
 import sys
 from collections import defaultdict
-from copy import deepcopy
 from typing import Dict, Iterator, List, Set, Tuple
 
 Tile = List[List[str]]

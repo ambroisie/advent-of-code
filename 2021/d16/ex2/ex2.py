@@ -6,7 +6,7 @@ import itertools
 import math
 import sys
 from dataclasses import dataclass
-from typing import Callable, Dict, Iterable, Iterator, List, Tuple, TypeVar
+from typing import Callable, Dict, Iterable, Iterator, List, Tuple
 
 RawPacket = List[bool]
 

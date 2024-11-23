@@ -2,8 +2,6 @@
 
 import re
 import sys
-from collections import defaultdict
-from copy import deepcopy
 from dataclasses import dataclass
 from typing import Dict, List, Set, Tuple
 

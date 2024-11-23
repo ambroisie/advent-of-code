@@ -2,8 +2,6 @@
 
 import sys
 from functools import reduce
-from itertools import chain, cycle
-from typing import Iterable, List
 
 
 def main() -> None:

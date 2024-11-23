@@ -2,7 +2,7 @@
 
 import itertools
 import sys
-from typing import List, Tuple
+from typing import List
 
 
 def solve(circle: List[int]) -> int:

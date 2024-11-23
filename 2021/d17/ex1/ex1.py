@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 
 import itertools
-import math
 import sys
 from typing import Iterator, List, NamedTuple
 

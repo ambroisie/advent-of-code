@@ -1,9 +1,8 @@
 #!/usr/bin/env python
 
-import enum
 import itertools
 import sys
-from typing import Iterable, Iterator, List, NamedTuple, Set
+from typing import List, NamedTuple, Set
 
 
 class Point(NamedTuple):

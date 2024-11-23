@@ -1,11 +1,10 @@
 #!/usr/bin/env python
 
-import itertools
 import sys
 from copy import deepcopy
 from dataclasses import dataclass, field
 from enum import IntEnum
-from typing import Callable, List, NamedTuple
+from typing import List, NamedTuple
 
 
 class ParameterMode(IntEnum):

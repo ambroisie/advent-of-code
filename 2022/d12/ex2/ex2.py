@@ -51,7 +51,7 @@ def solve(input: list[str]) -> int:
         assert end is not None  # Sanity check
         return HeightMap(heights, start, end)
 
-    def djikstra(map: HeightMap) -> int:
+    def dijkstra(map: HeightMap) -> int:
         # Priority queue of (distance, point)
         queue = [(0, map.start)]
         seen: set[Point] = set()
@@ -81,7 +81,7 @@ def solve(input: list[str]) -> int:
         )
         for start in starts:
             map.start = start
-            yield djikstra(map)
+            yield dijkstra(map)
 
     map = to_height_map(input)
     return min(hike_distances(map))

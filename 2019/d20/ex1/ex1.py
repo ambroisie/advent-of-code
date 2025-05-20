@@ -73,7 +73,7 @@ def solve(input: str) -> int:
         graph = to_graph(paths, post_process_gates(letters, paths))
         return graph, next(iter(gates["AA"])), next(iter(gates["ZZ"]))
 
-    def djikstra(start: Point, end: Point, graph: Graph) -> int:
+    def dijkstra(start: Point, end: Point, graph: Graph) -> int:
         # Priority queue of (distance, point)
         queue = [(0, start)]
         seen: set[Point] = set()
@@ -94,7 +94,7 @@ def solve(input: str) -> int:
         assert False  # Sanity check
 
     graph, start, end = parse(input.splitlines())
-    return djikstra(start, end, graph)
+    return dijkstra(start, end, graph)
 
 
 def main() -> None:

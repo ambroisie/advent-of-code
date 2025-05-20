@@ -92,7 +92,7 @@ def solve(input: str) -> int:
                 for gear in (Gear.TORCH, Gear.NEITHER):
                     yield 1 + (7 if gear != explorer.gear else 0), Explorer(n, gear)
 
-    def djikstra(start: Explorer, end: Explorer, cave: Cave) -> int:
+    def dijkstra(start: Explorer, end: Explorer, cave: Cave) -> int:
         # Priority queue of (distance, point)
         queue = [(0, start)]
         seen: set[Explorer] = set()
@@ -116,7 +116,7 @@ def solve(input: str) -> int:
     cave = Cave(depth, target)
     start = Explorer(Point(0, 0), Gear.TORCH)
     end = Explorer(target, Gear.TORCH)
-    return djikstra(start, end, cave)
+    return dijkstra(start, end, cave)
 
 
 def main() -> None:

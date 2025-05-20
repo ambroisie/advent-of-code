@@ -73,7 +73,7 @@ def solve(input: str) -> int:
         assert end is not None  # Sanity check
         return ParsedMaze(start, end, blocks)
 
-    def djikstra(start: Point, end: Point, blocks: set[Point]) -> int:
+    def dijkstra(start: Point, end: Point, blocks: set[Point]) -> int:
         def next_moves(
             pos: Point,
             dir: Direction,
@@ -106,7 +106,7 @@ def solve(input: str) -> int:
         assert False  # Sanity check
 
     start, end, blocks = parse(input.splitlines())
-    return djikstra(start, end, blocks)
+    return dijkstra(start, end, blocks)
 
 
 def main() -> None:

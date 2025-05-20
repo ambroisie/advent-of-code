@@ -27,7 +27,7 @@ def solve(input: str) -> str:
     def parse(input: list[str]) -> list[Point]:
         return [Point(*map(int, line.split(","))) for line in input]
 
-    def djikstra(start: Point, end: Point, blocks: set[Point]) -> int | None:
+    def dijkstra(start: Point, end: Point, blocks: set[Point]) -> int | None:
         # Priority queue of (distance, point)
         queue = [(0, start)]
         seen: set[Point] = set()
@@ -58,7 +58,7 @@ def solve(input: str) -> str:
         low, high = 0, len(blocks)
         while low < high:
             mid = low + (high - low) // 2
-            if djikstra(start, end, set(blocks[: mid + 1])) is None:
+            if dijkstra(start, end, set(blocks[: mid + 1])) is None:
                 high = mid
             else:
                 low = mid + 1

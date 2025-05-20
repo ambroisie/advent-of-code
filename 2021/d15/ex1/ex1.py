@@ -22,7 +22,7 @@ def solve(input: List[str]) -> int:
                 continue
             yield Point(x, y)
 
-    def djikstra(start: Point, end: Point) -> int:
+    def dijkstra(start: Point, end: Point) -> int:
         # Priority queue of (distance, point)
         queue = [(0, start)]
         seen: Set[Point] = set()
@@ -42,7 +42,7 @@ def solve(input: List[str]) -> int:
 
         assert False  # Sanity check
 
-    return djikstra(Point(0, 0), Point(len(levels) - 1, len(levels[0]) - 1))
+    return dijkstra(Point(0, 0), Point(len(levels) - 1, len(levels[0]) - 1))
 
 
 def main() -> None:
